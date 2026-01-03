@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ganesh Narayanapurapu | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="components/project-card.js"></script>
+    <script src="components/experience-card.js"></script>
+</head>
+
+<body class="bg-gray-50 text-gray-800 font-sans">
+    <custom-navbar></custom-navbar>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1 class="text-4xl md:text-6xl font-extrabold mb-4 leading-tight">Ganesh <span
+                        class="text-indigo-400">Narayanapurapu</span></h1>
+                <h2 class="text-2xl md:text-3xl text-indigo-300 font-semibold mb-6">Computer Science Undergraduate &
+                    Unity 3D Developer</h2>
+                <p class="text-lg md:text-xl mb-8 text-gray-200">Building immersive digital experiences through code,
+                    creativity, and cutting-edge technology.</p>
+                <div class="flex flex-wrap gap-4 justify-center md:justify-start">
+                    <a href="#projects"
+                        class="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-3 rounded-full font-bold transition-all hover:scale-105 shadow-lg">View
+                        Projects</a>
+                    <a href="#contact"
+                        class="border-2 border-indigo-400 text-indigo-300 hover:bg-indigo-600/20 px-8 py-3 rounded-full font-bold transition-all hover:scale-105">Contact
+                        Me</a>
+                </div>
+            </div>
+            <div class="hero-image-container">
+                <div
+                    class="w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 rounded-full overflow-hidden shadow-2xl relative z-10 border-4 border-indigo-500/30 backdrop-blur-sm">
+                    <img src="components/mine.jpeg" alt="Ganesh Narayanapurapu" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="reveal">
+            <h2 class="text-3xl font-bold mb-8 flex items-center gap-3">
+                <span class="w-10 h-1 bg-indigo-600 rounded-full"></span>
+                👋 About Me
+            </h2>
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                <p class="mb-4 text-lg leading-relaxed text-gray-600">I am a Computer Science undergraduate with strong
+                    foundations in Python, Java, C, and
+                    modern web technologies. I have hands-on experience in data analytics, AI-based applications, and
+                    full‑stack development.</p>
+                <p class="mb-4 text-lg leading-relaxed text-gray-600">Currently, I am focusing on <span
+                        class="font-semibold text-indigo-600">game development
+                        using Unity 3D</span>, where I have built multiple obstacle‑based games and am actively
+                    developing an ongoing project titled <span
+                        class="font-semibold text-indigo-600">RushHourCafe</span>.</p>
+                <p class="text-lg leading-relaxed text-gray-600">Alongside technical skills, I bring proven leadership
+                    experience as the <span class="font-semibold text-indigo-600">Chair of the IEEE Computer Society
+                        Chapter</span>, where I
+                    coordinated 12 events and served as the Head Coordinator for IEEE Day.</p>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="reveal">
+            <h2 class="text-3xl font-bold mb-8 flex items-center gap-3">
+                <span class="w-10 h-1 bg-indigo-600 rounded-full"></span>
+                🎓 Education
+            </h2>
+            <div
+                class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col md:flex-row md:justify-between md:items-center gap-4">
+                <div>
+                    <h3 class="text-xl font-bold text-gray-800">Bachelor of Technology – Computer Science</h3>
+                    <p class="text-indigo-600 font-medium">SASI Institute of Technology and Engineering, Andhra Pradesh
+                    </p>
+                    <p class="text-gray-500 mt-1">2023 – Present</p>
+                </div>
+                <div class="bg-indigo-50 px-6 py-3 rounded-xl border border-indigo-100">
+                    <p class="text-indigo-700 font-bold text-xl">CGPA: 9.2 / 10</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="reveal">
+            <h2 class="text-3xl font-bold mb-8 flex items-center gap-3">
+                <span class="w-10 h-1 bg-indigo-600 rounded-full"></span>
+                💼 Experience
+            </h2>
+            <div class="experience-grid">
+                <custom-experience-card title="Software Development Intern" company="TRINITAS Consultancy Services LLP"
+                    duration="Jun 2025 – Jul 2025"
+                    points='["Implemented AI‑based live subtitle systems", "Built AI‑driven web interfaces", "Worked in Agile sprint environments"]'></custom-experience-card>
+
+                <custom-experience-card title="Virtual Data Analyst Intern" company="Deloitte" duration="Jun 2025"
+                    points='["Analyzed datasets with 10,000+ entries", "Performed anomaly detection using forensic tools", "Improved reporting accuracy"]'></custom-experience-card>
+
+                <custom-experience-card title="AICTE Green Skills Intern" company="Edunet Foundation | AICTE | Shell"
+                    duration="Jun 2025 – Jul 2025"
+                    points='["Built carbon‑tracking dashboards using Excel & Power BI", "Applied ML forecasting with 92% accuracy"]'></custom-experience-card>
+            </div>
+        </section>
+
+        <!-- Game Development Section -->
+        <section class="reveal">
+            <h2 class="text-3xl font-bold mb-8 flex items-center gap-3">
+                <span class="w-10 h-1 bg-indigo-600 rounded-full"></span>
+                🎮 Game Development (Unity 3D)
+            </h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div
+                    class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:border-indigo-200 transition-all">
+                    <h3 class="text-xl font-bold mb-4 text-indigo-600">RushHourCafe (Ongoing Project)</h3>
+                    <ul class="list-none space-y-3">
+                        <li class="flex items-start gap-2 text-gray-600">
+                            <span class="text-indigo-500 mt-1">●</span>
+                            Unity 3D game focused on fast‑paced gameplay
+                        </li>
+                        <li class="flex items-start gap-2 text-gray-600">
+                            <span class="text-indigo-500 mt-1">●</span>
+                            Task handling and time‑based mechanics
+                        </li>
+                        <li class="flex items-start gap-2 text-gray-600">
+                            <span class="text-indigo-500 mt-1">●</span>
+                            Active development and iteration
+                        </li>
+                    </ul>
+                </div>
+                <div
+                    class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:border-indigo-200 transition-all">
+                    <h3 class="text-xl font-bold mb-4 text-indigo-600">Obstacle‑Based Games</h3>
+                    <ul class="list-none space-y-3">
+                        <li class="flex items-start gap-2 text-gray-600">
+                            <span class="text-indigo-500 mt-1">●</span>
+                            Designed and developed multiple obstacle games
+                        </li>
+                        <li class="flex items-start gap-2 text-gray-600">
+                            <span class="text-indigo-500 mt-1">●</span>
+                            Implemented player movement, collisions, scoring, and levels
+                        </li>
+                        <li class="flex items-start gap-2 text-gray-600">
+                            <span class="text-indigo-500 mt-1">●</span>
+                            Focused on smooth gameplay and performance
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="reveal">
+            <h2 class="text-3xl font-bold mb-8 flex items-center gap-3">
+                <span class="w-10 h-1 bg-indigo-600 rounded-full"></span>
+                🚀 Projects
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <custom-project-card title="Stock‑Ease" description="Real‑time stock tracker built with React & APIs"
+                    image="components/stock.webp" features='["React", "Real-time APIs", "Data Visualization"]'
+                    link="https://stock-ease.github.io/CodeCrafters/"></custom-project-card>
+                <custom-project-card title="Weather Forecasting App"
+                    description="Real‑time weather updates with high accuracy" image="components/article.jpg"
+                    features='["JavaScript", "Weather API", "Responsive Design"]'
+                    link="https://narayanapurapuganesh.github.io/Whether/"></custom-project-card>
+                <custom-project-card title="Historical Places Website"
+                    description="Multi‑page informational website showcasing world heritage"
+                    image="components/Historicalplaces.webp" features='["HTML5/CSS3", "Multi-page", "UI/UX"]'
+                    link="https://narayanapurapuganesh.github.io/Historical-Places/"></custom-project-card>
+                <custom-project-card title="Social Media Platform"
+                    description="Mini social network using React & Firebase for real-time interactions"
+                    image="components/social-media.webp" features='["React", "Firebase", "Real-time Auth"]'
+                    link="https://narayanapurapuganesh.github.io/CodeAlpha-task2/"></custom-project-card>
+                <custom-project-card title="Sales Dashboard (LX Company)"
+                    description="Excel‑based interactive dashboard for tracking business KPIs"
+                    image="components/SalesDashboard.webp" features='["Excel", "KPI Tracking", "Automation"]'
+                    link="https://github.com/NarayanapurapuGanesh/Dashboard"></custom-project-card>
+            </div>
+        </section>
+
+
+        <!-- Leadership Section -->
+        <section class="reveal">
+            <h2 class="text-3xl font-bold mb-8 flex items-center gap-3">
+                <span class="w-10 h-1 bg-indigo-600 rounded-full"></span>
+                🧑‍💼 Leadership & Volunteering
+            </h2>
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                <h3 class="text-xl font-bold mb-4 text-indigo-600">IEEE Computer Society Chapter – Chair</h3>
+                <ul class="list-none space-y-3">
+                    <li class="flex items-start gap-2 text-gray-600">
+                        <span class="text-indigo-500 mt-1">●</span>
+                        Coordinated <span class="font-semibold text-gray-800">12 technical and professional
+                            events</span>
+                    </li>
+                    <li class="flex items-start gap-2 text-gray-600">
+                        <span class="text-indigo-500 mt-1">●</span>
+                        Served as <span class="font-semibold text-gray-800">Head Coordinator for IEEE Day</span>
+                    </li>
+                    <li class="flex items-start gap-2 text-gray-600">
+                        <span class="text-indigo-500 mt-1">●</span>
+                        Led teams, managed schedules, and executed large‑scale events
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-6">🛠 Skills</h2>
+            <div class="bg-white p-6 rounded-xl shadow-md">
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div>
+                        <h3 class="text-lg font-semibold mb-2 text-indigo-600">Programming</h3>
+                        <ul class="space-y-1">
+                            <li>Python</li>
+                            <li>Java</li>
+                            <li>C</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold mb-2 text-indigo-600">Web Development</h3>
+                        <ul class="space-y-1">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Node.js</li>
+                            <li>Express.js</li>
+                            <li>Bootstrap</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold mb-2 text-indigo-600">Databases</h3>
+                        <ul class="space-y-1">
+                            <li>MySQL</li>
+                            <li>MongoDB</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold mb-2 text-indigo-600">Tools</h3>
+                        <ul class="space-y-1">
+                            <li>Unity 3D</li>
+                            <li>GitHub</li>
+                            <li>Pandas</li>
+                            <li>NumPy</li>
+                            <li>Excel</li>
+                            <li>Power BI</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="reveal">
+            <h2 class="text-3xl font-bold mb-8 flex items-center gap-3">
+                <span class="w-10 h-1 bg-indigo-600 rounded-full"></span>
+                📫 Contact
+            </h2>
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div>
+                        <h3 class="text-xl font-bold mb-6 text-gray-800">Get in Touch</h3>
+                        <div class="space-y-6">
+                            <div
+                                class="flex items-center gap-4 bg-gray-50 p-4 rounded-xl border border-gray-100 transition-all hover:border-indigo-200">
+                                <div class="bg-indigo-100 p-2 rounded-lg">
+                                    <i data-feather="mail" class="text-indigo-600"></i>
+                                </div>
+                                <a href="mailto:ganesh.narayanapurapu@sasi.ac.in"
+                                    class="text-gray-600 hover:text-indigo-600 transition truncate">ganesh.narayanapurapu@sasi.ac.in</a>
+                            </div>
+                            <div
+                                class="flex items-center gap-4 bg-gray-50 p-4 rounded-xl border border-gray-100 transition-all hover:border-indigo-200">
+                                <div class="bg-indigo-100 p-2 rounded-lg">
+                                    <i data-feather="phone" class="text-indigo-600"></i>
+                                </div>
+                                <span class="text-gray-600">9398689925</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-6 text-gray-800">Connect With Me</h3>
+                        <div class="flex flex-wrap gap-4">
+                            <a href="https://github.com/NarayanapurapuGanesh/" target="_blank"
+                                class="w-12 h-12 rounded-xl bg-gray-50 hover:bg-indigo-600 flex items-center justify-center transition-all group shadow-sm border border-gray-100"
+                                aria-label="GitHub">
+                                <i data-feather="github"
+                                    class="text-gray-600 group-hover:text-white transition-colors"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/ganeshnarayanapurapu/" target="_blank"
+                                class="w-12 h-12 rounded-xl bg-gray-50 hover:bg-indigo-600 flex items-center justify-center transition-all group shadow-sm border border-gray-100"
+                                aria-label="LinkedIn">
+                                <i data-feather="linkedin"
+                                    class="text-gray-600 group-hover:text-white transition-colors"></i>
+                            </a>
+                            <a href="https://www.codechef.com/users/n_ganesh_1023" target="_blank"
+                                class="w-12 h-12 rounded-xl bg-gray-50 hover:bg-indigo-600 flex items-center justify-center transition-all group shadow-sm border border-gray-100"
+                                aria-label="CodeChef">
+                                <i data-feather="code"
+                                    class="text-gray-600 group-hover:text-white transition-colors"></i>
+                            </a>
+                            <a href="https://twitter.com/GaneshN1023" target="_blank"
+                                class="w-12 h-12 rounded-xl bg-gray-50 hover:bg-indigo-600 flex items-center justify-center transition-all group shadow-sm border border-gray-100"
+                                aria-label="Twitter">
+                                <i data-feather="twitter"
+                                    class="text-gray-600 group-hover:text-white transition-colors"></i>
+                            </a>
+                            <a href="https://www.instagram.com/ganesh_n_1023/" target="_blank"
+                                class="w-12 h-12 rounded-xl bg-gray-50 hover:bg-indigo-600 flex items-center justify-center transition-all group shadow-sm border border-gray-100"
+                                aria-label="Instagram">
+                                <i data-feather="instagram"
+                                    class="text-gray-600 group-hover:text-white transition-colors"></i>
+                            </a>
+                            <a href="https://www.facebook.com/ganesh.narayanapurapu.9" target="_blank"
+                                class="w-12 h-12 rounded-xl bg-gray-50 hover:bg-indigo-600 flex items-center justify-center transition-all group shadow-sm border border-gray-100"
+                                aria-label="Facebook">
+                                <i data-feather="facebook"
+                                    class="text-gray-600 group-hover:text-white transition-colors"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <custom-footer></custom-footer>
+    <script>
+        feather.replace();
+
+        // Scroll Reveal Animation
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+    <script src="https://unpkg.com/feather-icons"></script>
+</body>
+
+</html>
